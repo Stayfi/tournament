@@ -1,7 +1,7 @@
 export class Highlander {
-    constructor(type?: String) { }
+  constructor(type?: String) { }
 
-    hitPoints() {
-        return 0
-    }
+  hitPoints() {
+    throw new Error('Method not implemented');
+  }
 }

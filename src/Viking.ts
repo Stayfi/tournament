@@ -1,9 +1,9 @@
 export class Viking {
-    hitPoints() {
-        return 0
-    }
+  hitPoints() {
+    throw new Error('Method not implemented');
+  }
 
-    equip(equipment: String) {
-        return this
-    }
+  equip(equipment: String) {
+    throw new Error('Method not implemented');
+  }
 }

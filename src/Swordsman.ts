@@ -1,14 +1,15 @@
 export class Swordsman {
-    constructor(type?: String) { }
+  constructor(type?: String) { }
 
-    hitPoints() {
-        return 0
-    }
+  hitPoints() {
+    throw new Error('Method not implemented');
+  }
 
-    equip(equipment: String) {
-        return this
-    }
+  equip(equipment: String) {
+    throw new Error('Method not implemented');
+  }
 
-    engage(fighter: any) {
-    }
+  engage(fighter: any) {
+    throw new Error('Method not implemented');
+  }
 }
