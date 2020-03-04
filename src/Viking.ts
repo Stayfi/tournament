@@ -1,9 +1,10 @@
-export class Viking {
-  hitPoints() {
-    throw new Error('Method not implemented');
-  }
+import { AFighter } from './AFighter';
 
-  equip(equipment: String) {
-    throw new Error('Method not implemented');
+export class Viking extends AFighter {
+
+  constructor(fighterType?: string) {
+    super(fighterType);
+    this.setInitialLifePoints(120);
+    return this.equip('axe');
   }
 }

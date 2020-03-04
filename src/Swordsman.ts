@@ -1,15 +1,13 @@
-export class Swordsman {
-  constructor(type?: String) { }
+import { AFighter } from './AFighter';
 
-  hitPoints() {
-    throw new Error('Method not implemented');
-  }
+export class Swordsman extends AFighter {
 
-  equip(equipment: String) {
-    throw new Error('Method not implemented');
-  }
-
-  engage(fighter: any) {
-    throw new Error('Method not implemented');
+  constructor(fighterType?: string) {
+    super(fighterType);
+    this.setInitialLifePoints(100);
+    if (fighterType === 'Vicious') {
+      this.equip('poison');
+    }
+    return this.equip('sword');
   }
 }

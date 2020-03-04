@@ -1,7 +1,13 @@
-export class Highlander {
-  constructor(type?: String) { }
+import { AFighter } from './AFighter';
 
-  hitPoints() {
-    throw new Error('Method not implemented');
+export class Highlander extends AFighter {
+
+  constructor(fighterType?: string) {
+    super(fighterType);
+    this.setInitialLifePoints(150);
+    if (fighterType === 'Veteran') {
+      this.equip('berserk');
+    }
+    return this.equip('great-sword');
   }
 }
