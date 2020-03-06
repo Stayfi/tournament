@@ -1,6 +1,6 @@
-import { Swordsman } from "../src/Swordsman"
-import { Viking } from "../src/Viking"
-import { Highlander } from "../src/Highlander"
+import { Swordsman } from "../src/Fighters/Swordsman"
+import { Viking } from "../src/Fighters/Viking"
+import { Highlander } from "../src/Fighters/Highlander"
 
 /**
  *

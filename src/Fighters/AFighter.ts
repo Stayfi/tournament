@@ -1,5 +1,5 @@
-import { Equipment } from './Equipments';
-import { TEquipementRules } from './EquipementsRules';
+import { Equipment } from '../Equipments/Equipments';
+import { TEquipementRules } from '../Equipments/EquipementsRules';
 
 export abstract class AFighter {
   protected fighterType: string;
